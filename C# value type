@@ -1,0 +1,14 @@
+Type		        Size
+bool		      1 byte
+byte		      1 byte
+char		      2 bytes
+decimal		      16 bytes
+double		      8 bytes
+float		      4 bytes
+int		      4 bytes
+long		      8 bytes
+sbyte		      1 byte
+short		      2 bytes
+uint		      4 bytes
+ulong		      8 bytes
+ushort		      2 bytes
