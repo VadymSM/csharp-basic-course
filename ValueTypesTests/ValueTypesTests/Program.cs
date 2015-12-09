@@ -36,6 +36,16 @@ namespace ValueTypesTests
             Console.WriteLine();
             Console.WriteLine(typeof(ushort).FullName + " " + "The size of ushort is {0}.", sizeof(ushort));
             Console.WriteLine();
+            0000
+            0001
+            0010
+            0011
+            0100
+            0101
+            0110
+            0111
+            1000
+            1001
 
             Console.Read();
         }
