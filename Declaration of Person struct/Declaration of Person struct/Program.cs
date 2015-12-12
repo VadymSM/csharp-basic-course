@@ -22,13 +22,6 @@ namespace Declaration_of_Person_struct
             personMarriagestatus = marriagestatus;
             personSex = sex;
         }
-        public Person() { }
-        public void Display()
-        {
-            Console.WriteLine("Name: {0}, Surname: {1}, Birthday: {2}, Marriagestatus: {3}, Sex: {4}", personName, personSurname, personBirthday, personMarriagestatus, personSex);
-
-        }
-
         
         static void Main(string[] args)
         {
