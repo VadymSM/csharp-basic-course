@@ -32,11 +32,9 @@ namespace Declaration_of_Person_struct
         
         static void Main(string[] args)
         {
-            Console.WriteLine();
-            Person Mel = new Person("Nikki", "Smith", 1990, "Single", "Male");
-
-            Mel.Display();
-                   
+            Person Person = new Person("Nikki", "Smith", 1990, "Single", "Male");
+            Console.WriteLine(Person.personName + " " + Person.personSurname + " " + Person.personBirthday + " " + Person.personMarriagestatus + " " + Person.personSex);
+                             
             Console.Read();
         }
     }
