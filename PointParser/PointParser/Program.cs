@@ -19,17 +19,21 @@ namespace PointParser
                 X = x;
                 Y = y;
             }
-           
-            static void Main(string[] args)
+            public Point(String str)
             {
-                Console.Write("Please, enter coordinates: ");
-                int result = Int32.Parse(Console.ReadLine());
-                
-
-                Console.WriteLine("You entered the following coordinates: ");
-
-                Console.Read();
+                str.Split(' ');
+                X = 0;
+                Y = 0;
             }
+        }
+        static void Main(string[] args)
+        {
+            Console.Write("Please, enter coordinates: ");
+            string input = Console.ReadLine();
+            string[] ar = input.Split(',');
+            Console.Write(ar[0]);
+            Console.Write(ar[1]);
+            Console.Read();
         }
     }
 }
