@@ -10,21 +10,18 @@ namespace Implement_setter_of_bits
     {
         static void Main(string[] args)
         {
+            int result = 0;
+
             while (true)
             {
                 Console.Write("Enter flag (dex): ");
-                int result = Int32.Parse(Console.ReadLine());
+                int flag = Int32.Parse(Console.ReadLine());
+                result = result | flag;
                 Console.WriteLine("Your current number is: " + result);
-
-                Console.Write("Enter flag (dex): ");
-                int FlagA = Int32.Parse(Console.ReadLine());
-                Console.WriteLine("Your current number is: " + FlagA);
-                int c = 0;
-                c = result | FlagA;
-                Console.WriteLine("Value of c is {0}", c);
+                             
 
 
-                Console.Read();
+                
             }
         }
     }

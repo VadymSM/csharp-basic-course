@@ -4,29 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Declaration_of_Person_struct
+namespace DeclarationOfPersonStruct
 {
-    class Person
+    class Program
     {
-        public string personName;
-        public string personSurname;
-        public int personBirthday;
-        public string personMarriagestatus;
-        public string personSex;
+        
 
-        public Person(string name, string surname, int birthday, string marriagestatus, string sex)
-        {
-            personName = name;
-            personSurname = surname;
-            personBirthday = birthday;
-            personMarriagestatus = marriagestatus;
-            personSex = sex;
-        }
+        
         
         static void Main(string[] args)
         {
-            Person Person = new Person("Nikki", "Smith", 1990, "Single", "Male");
-            Console.WriteLine(Person.personName + " " + Person.personSurname + " " + Person.personBirthday + " " + Person.personMarriagestatus + " " + Person.personSex);
+            int x = (int)DeclarationOfPersonStruct.Person.Sex.Man;
+            Person Person = new Person("Nikki", "Smith", new DateTime(1990,08,02), "Single", x);
+            Console.WriteLine(Person._personName + " " + Person._personSurname + " " + Person._personBirthday + " " + Person._personMarriagestatus + " " + Person._personSex);
                              
             Console.Read();
         }

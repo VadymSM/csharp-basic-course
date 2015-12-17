@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Declaration of Person struct", "Declaration of Person struct\Declaration of Person struct.csproj", "{E338FE39-9547-42E7-8888-F74C88688ED3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeclarationOfPersonStruct", "Declaration of Person struct\DeclarationOfPersonStruct.csproj", "{E338FE39-9547-42E7-8888-F74C88688ED3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{10D4890E-11D8-4E33-8875-DD12DDD077E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
