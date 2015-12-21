@@ -14,7 +14,7 @@ namespace DeclarationOfPersonStruct
         
         static void Main(string[] args)
         {
-            int x = (int)DeclarationOfPersonStruct.Person.Sex.Man;
+            Person.Sex x = DeclarationOfPersonStruct.Person.Sex.Man;
             Person Person = new Person("Nikki", "Smith", new DateTime(1990,08,02), "Single", x);
             Console.WriteLine(Person._personName + " " + Person._personSurname + " " + Person._personBirthday + " " + Person._personMarriagestatus + " " + Person._personSex);
                              
