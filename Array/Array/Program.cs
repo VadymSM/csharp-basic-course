@@ -10,11 +10,12 @@ namespace Array
     {
         static void Main(string[] args)
         {
-            int[] strings = new int[1000];
-            for (int i = 1; i < strings.Length; i++)
+            int[] strings = new int[10];
+            for (int index = 0; index < strings.Length; index++)
             {
-                i = i + 9;
-                Console.WriteLine(i);
+                strings[index] = index+1;
+                
+                Console.WriteLine(strings[index]);
             }
             
 
