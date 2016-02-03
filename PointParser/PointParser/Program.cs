@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace PointParser
 {
@@ -10,29 +11,52 @@ namespace PointParser
     {
         struct Point
         {
-            public int X;
-            public int Y;
+            private int _x;
+            private int _y;
 
 
             public Point(int x, int y)
             {
-                X = x;
-                Y = y;
+                _x = x;
+                _y = y;
             }
-            public Point(String str)
+            
+            public Point(String inputString)
             {
-                str.Split(' ');
-                X = 0;
-                Y = 0;
+                if (inputString == null)
+                {
+                    _x = 0;
+                    _y = 0;
+
+                    return;
+                }
+
+                String[] arr = inputString.Split(',');
+
+                String localX = arr[0];
+                char[] CharsToTrim = { ' ' };
+                string result = localX.Trim(CharsToTrim);
+
+                _x = Int32.Parse(localX);
+
+                _y = Int32.Parse(arr[1]);
+            }
+
+            public override string ToString()
+            {
+                return "[" + _x + "," + _y + "]";
             }
         }
         static void Main(string[] args)
         {
-            Console.Write("Please, enter coordinates: ");
-            string input = Console.ReadLine();
-            string[] ar = input.Split(',');
-            Console.Write(ar[0]);
-            Console.Write(ar[1]);
+            while (true)
+            {
+                Console.Write("Please, enter coordinates: ");
+                string input = Console.ReadLine();
+                Point P = new Point(input);
+                Console.WriteLine(P); // 1,2    [1,2]
+            }
+        
             Console.Read();
         }
     }
