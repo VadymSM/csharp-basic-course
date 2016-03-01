@@ -25,13 +25,15 @@ namespace CreatingArray
             // calculate value of array item and setup it
             for (int i = 1; i < array.Length; i++)
             {
-                int sum = array[i - 1] + array[i - 2];
-                array[i] = sum;
-                if (array.Length < 0)
+                int prevPrevEl = 0;
+                if (i != 1)
                 {
-                    array[i] = 0;
+                    prevPrevEl = array[i - 2];
                 }
-                Console.WriteLine(" " + array);
+                int sum = array[i - 1] + prevPrevEl;
+                array[i] = sum;
+                
+                Console.WriteLine(" " + array[i]);
                 
             }
 
