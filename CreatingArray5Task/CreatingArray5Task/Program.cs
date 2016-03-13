@@ -27,23 +27,26 @@ namespace CreatingArray5Task
             int Maximum = 0;
 
             Minimum = array[0];
+            Maximum = array[0];
 
             for(int j = 0; j < array.Length; j++)
             {
                 if (Minimum > array[j])
+                {
                     Minimum = array[j];
+                }
+                    
+                if (Maximum < array[j])
+                {
+                    Maximum = array[j];
+                }
+                    
             }
             Console.WriteLine();
             Console.WriteLine("Minimum = {0}", Minimum);
-
-            for(int k = 0; k < array.Length; k++)
-            {
-                if (Maximum < array[k])
-                    Maximum = array[k];
-            }
-
             Console.WriteLine("Maximum = {0}\n", Maximum);
 
+           
             Console.ReadKey();
         }
     }
