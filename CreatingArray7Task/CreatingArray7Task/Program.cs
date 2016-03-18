@@ -12,6 +12,7 @@ namespace CreatingArray7Task
         {
             while (true)
             {
+
                 Console.WriteLine("Enter array size: ");
                 int size = int.Parse(Console.ReadLine());
 
@@ -25,6 +26,7 @@ namespace CreatingArray7Task
                     array[i] = number;
 
                 }
+
 
                 for (int i = 0, j = array.Length - 1; i < j; i++, j--)
                 {
