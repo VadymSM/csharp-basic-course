@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Globalization;
+using System.IO;
 
 
 namespace CreateString
@@ -142,20 +143,35 @@ namespace CreateString
             {
                 i = str.IndexOf(toFind, i);
 
-                if(i != -1)
+                if (i != -1)
                 {
                     counter = counter + 1;
                     i++;
                 }
-                
+
             }
             Console.WriteLine(counter);
+            
         }
+        static void Task9()
+        {
+            Console.WriteLine("Enter path to folder: ");
+            var path = Console.ReadLine();
+
+            string[] files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
+            foreach(string file in files)
+            {
+                Console.WriteLine(file);
+            }
+
+            
+        }
+        
 
         static void Main(string[] args)
         {
             
-            Task8();
+            Task9();
 
             Console.ReadLine();
 
