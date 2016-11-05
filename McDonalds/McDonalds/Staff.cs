@@ -45,13 +45,22 @@ namespace McDonalds
             return _person.FirstOrDefault(person => person.Name == name && person.Surname == surname);
         }
 
-        public override string ToString()
+        public IEnumerable<Person> SortByLowToHigh()
         {
-            string result = "Staff:\n";
-            _person.ForEach(i => result += i.ToString() + "\n");
-            return result;
+            return _person.OrderBy(person => person.Salary);
         }
 
+        public double FindAverageSalary()
+        {
+            return _person.Average(person => person.Salary);
+        }
+
+        public DateTime FindOldestPerson()
+        {
+            return _person.Max(person => person.Age);
+        }
+
+        
     }
 
     abstract public class Person
@@ -118,7 +127,10 @@ namespace McDonalds
                    this.Salary == person.Salary;
         }
 
-        
+        public override string ToString()
+        {
+            return _name + " " + _surname + " " + _age + " " + _salary;
+        }
 
 
     }
@@ -145,7 +157,16 @@ namespace McDonalds
         }
         public override bool Equals(object obj)
         {
-            return base.Equals(_teachTime);
+            Trainer trainer = obj as Trainer;
+            if(trainer == null)
+            {
+                return false;
+            }
+            if (base.Equals(trainer))
+            {
+                return this._teachTime == trainer._teachTime;
+            }
+            return false;
         }
 
 
