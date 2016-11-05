@@ -1,0 +1,4 @@
+﻿1. What is DLL? 
+2. What is the diference between Debug and Release configurations?
+3. What is business logic?
+4. Why do we need unit-tests?

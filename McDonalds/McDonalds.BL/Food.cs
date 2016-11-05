@@ -8,7 +8,6 @@ namespace McDonalds
 {
     abstract class Product
     {
-
         public double Price
         {
             get; set;
@@ -151,47 +150,4 @@ namespace McDonalds
             return false;
         }
     }
-
-    class AvailableFood
-    {
-        private List<Product> _food = new List<Product>();
-
-        public void AddCocaCola(Product product)
-        {
-            _food.Add(product);
-        }
-
-        public void AddFanta(Product product)
-        {
-            _food.Add(product);
-        }
-
-        public void AddTea(Product product)
-        {
-            _food.Add(product);
-        }
-
-        public void AddCheeseBurger(Product product)
-        {
-            _food.Add(product);
-        }
-
-        public void AddBurger(Product product)
-        {
-            _food.Add(product);
-        }
-
-        public void RemoveProduct(Product product)
-        {
-            _food.Remove(product);
-        }
-
-        public override string ToString()
-        {
-            string result = "Available food:\n";
-            _food.ForEach(i => result += i.ToString() + "\n");
-            return result;
-        }
-    }
-
 }
