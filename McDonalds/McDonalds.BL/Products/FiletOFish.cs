@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace McDonalds.BL
+namespace McDonalds.BL.Products
 {
     class FiletOFish: Sandwich
     {
