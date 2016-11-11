@@ -39,10 +39,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Food.cs" />
+    <Compile Include="Products\Americano.cs" />
+    <Compile Include="Products\BigMac.cs" />
+    <Compile Include="Products\BigTasty.cs" />
+    <Compile Include="Products\Burger.cs" />
+    <Compile Include="Products\Cappuccino.cs" />
+    <Compile Include="Products\CheeseBurger.cs" />
+    <Compile Include="Products\CheeseBurgerWithBacon.cs" />
+    <Compile Include="Products\CocaCola.cs" />
+    <Compile Include="Products\Dessert.cs" />
+    <Compile Include="Products\DoubleCheeseBurger.cs" />
+    <Compile Include="Products\Drink.cs" />
+    <Compile Include="Products\Espresso.cs" />
+    <Compile Include="Products\Fanta.cs" />
+    <Compile Include="Products\FiletOFish.cs" />
+    <Compile Include="Products\Latte.cs" />
+    <Compile Include="Products\McChicken.cs" />
+    <Compile Include="Products\OrangeJuice.cs" />
+    <Compile Include="Products\PieWithCherry.cs" />
     <Compile Include="PreparedProducts.cs" />
+    <Compile Include="Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Products\RoyalCheeseBurger.cs" />
+    <Compile Include="Products\Sandwich.cs" />
+    <Compile Include="Products\Sprite.cs" />
     <Compile Include="Staff.cs" />
+    <Compile Include="Products\Tea.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="QA.txt" />
