@@ -65,11 +65,40 @@ namespace McDonalds.BL.Tests
         public void PreparedProducts_CheckRemoveProduct_Test()
         {
             PreparedProducts preparedProducts = new PreparedProducts();
+            // #1 products of the same type
             preparedProducts.Add(new CocaCola(12));
             preparedProducts.Add(new CocaCola(15));
             preparedProducts.Add(new CocaCola(9));
-            preparedProducts.RemoveByType(new CocaCola(12));
+            
+            preparedProducts.RemoveByType(new CocaCola(12));            
+            
             Assert.AreEqual(2, preparedProducts.Products.Count());
+
+            preparedProducts.RemoveByType(new CocaCola(12), 2);
+            Assert.AreEqual(0, preparedProducts.Products.Count());
+
+            // #2 products of different types
+            preparedProducts.Add(new CocaCola(12));
+            preparedProducts.Add(new Fanta(15));
+            preparedProducts.Add(new Tea(9));
+            preparedProducts.Add(new CheeseBurger(12));
+            preparedProducts.Add(new CheeseBurger(15));
+            preparedProducts.Add(new Fanta(9));
+
+            preparedProducts.RemoveByType(new Fanta(12));
+            preparedProducts.RemoveByType(new CheeseBurger(12), 2);
+
+            Assert.AreEqual(3, preparedProducts.Products.Count());
+
+            Assert.IsTrue(preparedProducts.Products.Count(p => p.GetType() == typeof(Fanta)) == 1);
+
+            Assert.IsFalse(preparedProducts.Products.Any(p => p.GetType() == typeof(CheeseBurger)));
+        }
+
+        [TestMethod]
+        public void PreparedProducts_CheckRemoveProducts_Test()
+        {            
+
         }
 
     }
