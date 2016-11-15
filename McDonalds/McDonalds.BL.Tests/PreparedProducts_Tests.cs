@@ -60,5 +60,18 @@ namespace McDonalds.BL.Tests
             Assert.IsTrue(isHandlerCalled);
             Assert.IsTrue(isProductCorrect);
         }
+
+        [TestMethod]
+        public void PreparedProducts_CheckRemoveProduct_Test()
+        {
+            PreparedProducts preparedProducts = new PreparedProducts();
+            preparedProducts.Add(new CocaCola(12));
+            preparedProducts.Add(new CocaCola(15));
+            preparedProducts.Add(new CocaCola(9));
+            preparedProducts.RemoveByType(new CocaCola(12));
+            Assert.AreEqual(2, preparedProducts.Products.Count());
+        }
+
     }
+    
 }

@@ -40,7 +40,7 @@ namespace McDonalds.BL
             }
         }
 
-        public void RemoveByType(IEnumerable<Product> product)
+        public void RemoveByType(IEnumerable<Product> products)
         {
             // [T] Remove from the collection of products passed products by type,
             //
@@ -48,7 +48,12 @@ namespace McDonalds.BL
             //  (you dshould create custom Exception with name ProductNotFoundException )
 
             // [T] Cover by unit tests
-            
+
+            foreach(Product p in products)
+            {
+                RemoveByType(p, 1);
+            }
+
         }
 
         public void RemoveByType(Product product, int count = 1)
@@ -59,8 +64,9 @@ namespace McDonalds.BL
             //  (you dshould create custom Exception with name ProductNotFoundException )
 
             // [T] Cover by unit tests
-            
-            
+
+            var forRemoving = _products.Where(p => p.GetType() == product.GetType()).Take(count).ToList();
+            forRemoving.ForEach(p => _products.Remove(p));
         }
 
 #endregion
