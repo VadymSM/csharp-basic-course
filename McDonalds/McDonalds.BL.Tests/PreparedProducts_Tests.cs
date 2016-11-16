@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using McDonalds.BL;
 using McDonalds.BL.Products;
+using System.Collections.Generic;
 
 namespace McDonalds.BL.Tests
 {
@@ -97,8 +98,25 @@ namespace McDonalds.BL.Tests
 
         [TestMethod]
         public void PreparedProducts_CheckRemoveProducts_Test()
-        {            
+        {
+            PreparedProducts preparedProducts = new PreparedProducts();
+            preparedProducts.Add(new CocaCola(21));
+            preparedProducts.Add(new Fanta(14));
+            preparedProducts.Add(new Tea(22));
+            preparedProducts.Add(new CheeseBurger(17));
+            preparedProducts.Add(new CheeseBurger(23));
+            preparedProducts.Add(new Fanta(9));
 
+            List<Product> input = new List<Product>();
+            input.Add(new CocaCola(21));
+            input.Add(new Fanta(14));
+            input.Add(new Tea(22));
+
+            preparedProducts.RemoveByType(input);
+            Assert.AreEqual(3, preparedProducts.Products.Count());
+            Assert.IsTrue(preparedProducts.Products.Count(p => p.GetType() == typeof(Fanta)) == 1);
+            Assert.IsFalse(preparedProducts.Products.Any(p => p.GetType() == typeof(CocaCola)));
+            Assert.IsFalse(preparedProducts.Products.Any(p => p.GetType() == typeof(Tea)));
         }
 
     }

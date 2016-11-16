@@ -65,7 +65,7 @@ namespace McDonalds.BL
 
             // [T] Cover by unit tests
 
-            throw new Exceptions.ProductNotFoundException();
+            // throw new Exceptions.ProductNotFoundException();
 
             var forRemoving = _products.Where(p => p.GetType() == product.GetType()).Take(count).ToList();
 

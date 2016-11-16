@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\ProductNotFoundException.cs" />
     <Compile Include="Products\Americano.cs" />
     <Compile Include="Products\BigMac.cs" />
     <Compile Include="Products\BigTasty.cs" />
@@ -70,9 +71,7 @@
     <Content Include="QA.txt" />
     <Content Include="Tasks.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
