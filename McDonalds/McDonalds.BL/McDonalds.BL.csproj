@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\ProductNotFoundException.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Products\Americano.cs" />
     <Compile Include="Products\BigMac.cs" />
     <Compile Include="Products\BigTasty.cs" />
