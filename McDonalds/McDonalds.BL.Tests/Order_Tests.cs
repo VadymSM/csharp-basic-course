@@ -116,8 +116,7 @@ namespace McDonalds.BL.Tests
             bool isOrderReady = false;
 
             PreparedProducts _preparedProduct = new PreparedProducts();
-
-
+            
             Order _order = new Order();
             _order.Add(new CocaCola(22));
             _order.Add(new Tea(15));

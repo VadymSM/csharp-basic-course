@@ -9,17 +9,14 @@ namespace McDonalds.BL
 {
     class Order
     {
-        // [T] list of products connected with the Order
-        // [T] list of prepared products
+        // [T] Property Id (it should be unique), setup this value in constructor
 
-        // [T] AddProduct method
-        // [T] RemoveProduct method
-
-        // [T] declare delegate for event
-        // [T] event Ready, occur when all products in Order are prepared.
-        //      when prepared list is equal products list we should generate event
-
-        // [T] ProductWasPrepared(Product)  - add product to the prepared list
+        // [T] add states to order: Open, InProgress, Close
+        //      - Open - order no prepared products
+        //      - InProgress - we have at least on prepared product
+        //      - Ready - all products are ready
+        //      Note: use enum - OrderStates, create appropriate field, change this field when necessary
+        // [T] add property for OrderStates
 
         // [T] Property Price - dynamicly calculate price of the Order
 
