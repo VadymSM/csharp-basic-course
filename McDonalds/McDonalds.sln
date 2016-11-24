@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDonalds.BL.Tests", "McDonalds.BL.Tests\McDonalds.BL.Tests.csproj", "{F2EBBFCA-8FC7-4B41-A994-A85264E5CF53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDonalds.BL", "McDonalds.BL\McDonalds.BL.csproj", "{49891F03-375A-4155-A31C-5F836179C689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDonalds.BLL.IntegrationTests", "McDonalds.BLL.IntegrationTests\McDonalds.BLL.IntegrationTests.csproj", "{F0129D26-A59A-4E3A-AA0C-0F1D504067DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{49891F03-375A-4155-A31C-5F836179C689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49891F03-375A-4155-A31C-5F836179C689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49891F03-375A-4155-A31C-5F836179C689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0129D26-A59A-4E3A-AA0C-0F1D504067DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0129D26-A59A-4E3A-AA0C-0F1D504067DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0129D26-A59A-4E3A-AA0C-0F1D504067DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0129D26-A59A-4E3A-AA0C-0F1D504067DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
