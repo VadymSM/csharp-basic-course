@@ -22,6 +22,38 @@ namespace McDonalds.BL
 
         // [T]!!!! cover class by unit tests!
 
+        private static int _startId = 0;
+        
+        public int Id
+        {
+            get; protected set;
+        }
+
+        public Order()
+        {
+            Id = _startId++;
+        }
+
+        public double Price
+        {
+            get { return _productsInOrder.Sum(p => p.Price); }
+        }
+
+        public enum OrderStates
+        {
+            Open = 1,
+            InProgress = 2,
+            Ready = 3
+        }
+
+        public OrderStates States
+        {
+            get; set;
+        }
+
+
+
+
         List<Product> _productsInOrder = new List<Product>();
 
         List<Product> _preparedProducts = new List<Product>();
