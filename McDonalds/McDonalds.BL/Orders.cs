@@ -18,7 +18,7 @@ namespace McDonalds.BL
     //      - get closed orders
     //      - get inProgress orders
 
-    class Orders
+    public class Orders
     {
         List<Order> _orders = new List<Order>();
 

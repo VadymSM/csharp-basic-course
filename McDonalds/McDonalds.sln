@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Experiments", "Experiments"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerTests", "TimerTests\TimerTests.csproj", "{97672F77-C9C4-425E-862B-067F01A7FA4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McDonalds.Console", "McDonalds.Console\McDonalds.Console.csproj", "{057029E6-E57B-4F71-9FFE-98565A169A89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{97672F77-C9C4-425E-862B-067F01A7FA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97672F77-C9C4-425E-862B-067F01A7FA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97672F77-C9C4-425E-862B-067F01A7FA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057029E6-E57B-4F71-9FFE-98565A169A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057029E6-E57B-4F71-9FFE-98565A169A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057029E6-E57B-4F71-9FFE-98565A169A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057029E6-E57B-4F71-9FFE-98565A169A89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

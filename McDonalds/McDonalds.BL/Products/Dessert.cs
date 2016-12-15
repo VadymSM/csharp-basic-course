@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace McDonalds.BL.Products
 {
-    abstract class Dessert: Product
+    abstract public class Dessert: Product
     {
         public Dessert(double price, int kcal)
             :base(price, kcal)

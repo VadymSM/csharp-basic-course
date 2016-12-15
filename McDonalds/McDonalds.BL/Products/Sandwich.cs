@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace McDonalds.BL.Products
 {
-    abstract class Sandwich : Product
+    abstract public class Sandwich : Product
     {
         public Sandwich(double price, int kcal)
             : base(price, kcal)

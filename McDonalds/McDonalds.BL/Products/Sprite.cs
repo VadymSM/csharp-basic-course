@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace McDonalds.BL.Products
 {
-    class Sprite: Drink
+    public class Sprite: Drink
     {
         const int SPRITE_KCAL = 100;
 

@@ -7,7 +7,7 @@ using McDonalds.BL.Products;
 
 namespace McDonalds.BL
 {
-    class Order
+    public class Order
     {
         // [T] Property Id (it should be unique), setup this value in constructor
 
@@ -51,9 +51,7 @@ namespace McDonalds.BL
             get; set;
         }
 
-
-
-
+        
         List<Product> _productsInOrder = new List<Product>();
 
         List<Product> _preparedProducts = new List<Product>();

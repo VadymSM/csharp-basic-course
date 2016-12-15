@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace McDonalds.BL.Products
 {
-    class BigMac: Sandwich
+    public class BigMac: Sandwich
     {
         const int BIGMAC_KCAL = 509;
         public BigMac(double price)

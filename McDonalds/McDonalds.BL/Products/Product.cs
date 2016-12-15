@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace McDonalds.BL.Products
 {
-    abstract class Product
+    abstract public class Product
     {
         public double Price
         {
